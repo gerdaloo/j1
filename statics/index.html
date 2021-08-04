@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>j1</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #register {
+            width: 40vw;
+            height: 60vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        #register input {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <form action="/" method="POST">
+            <div id="register">
+                <input type="text" placeholder="name" id="name" name="name">
+                <input type="email" id="email" placeholder="email" name="email">
+                <input type="password" id="password" placeholder="password" style="border-color: red;" value=""
+                    name="password">
+                <button type="submit" id="submit">ثبت نام</button>
+            </div>
+        </form>
+
+        <div id="users">
+
+        </div>
+    </div>
+
+
+
+    <script src="scripts.js"></script>
+
+
+</body>
+
+</html>
